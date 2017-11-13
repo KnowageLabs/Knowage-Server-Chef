@@ -4,7 +4,7 @@ This cookbook containes the recipe for installing and starting Knowage using Doc
 
 ## Supported Platforms
 
-* Ubuntu >= 12.04
+* Ubuntu >= 16.04
 
 ## Attributes
 
