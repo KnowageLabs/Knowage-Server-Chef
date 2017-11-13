@@ -6,6 +6,7 @@ knowage:
         - "8080:8080"
     environment:
         - WAIT_MYSQL=true
+        - PUBLIC_ADDRESS=130.206.118.178
 
 knowagedb:
     image: mysql:5.5
