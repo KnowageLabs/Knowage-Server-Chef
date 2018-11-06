@@ -1,5 +1,5 @@
 # Knowage-Server-Chef
-Chef deployment script for Knowage Server https://www.knowage-suite.com
+Chef deployment script for Knowage Server https://www.knowage-suite.com. This recipe will automatically download, install and start Docker and Docker Compose with a container for the Knowage Web application and a container with MySQL database for metadata.
 
 ## Usage
 
@@ -14,14 +14,17 @@ Include `knowage` in your node's `run_list`:
 }
 ```
 ### Option 2
-Just launch the `bin/installation.sh` script to install and launch the Knowage environment. This will use the default recipe to download, install and start Docker with a container for the Knowage Web application and a container with MySQL database use for the metadata.
+Just launch the `bin/installation.sh` script to install and launch the Knowage environment.
 
 ```bash
-./installation.sh <ip_address_or_hostname>
+./installation.sh [<ip_address_or_hostname>]
 ```
 
+If `<ip_address_or_hostname>` is not provided, then default is `localhost`.
+Port is `8080` by default.
+
 ## Version release
-To release a new version of the Chef recipe, the following steps must be performed:
+To release a new version of the Chef recipe (starting from the new Docker image), the following steps must be performed:
 
 - edit `cookbooks/knowage/files/docker-compose.yml` and `cookbooks/knowage/files/docker-compose.yml.bak` by updating the Knowage docker image version (e.g. from 6.1.1 to 6.2.1);
 - zip the folder `cookbooks`, rename the zip file `chef-cookbooks.zip` and make a new release at https://github.com/KnowageLabs/Knowage-Server-Chef/releases (adding `chef-cookbooks.zip` as asset).
