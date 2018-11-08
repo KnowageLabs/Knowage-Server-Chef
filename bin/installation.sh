@@ -28,7 +28,9 @@ rm -f chef_13.5.3-1_amd64.deb
 if [[ ! -d "cookbooks/knowage" ]]; then
 apt-get install git-core
 git clone https://github.com/KnowageLabs/Knowage-Server-Chef.git
+cd Knowage-Server-Chef
 git checkout parametric-recipe
+cd ..
 mv Knowage-Server-Chef/cookbooks .
 rm -rf Knowage-Server-Chef
 
