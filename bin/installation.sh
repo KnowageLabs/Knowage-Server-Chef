@@ -17,6 +17,9 @@ do
 	  
 done
 
+#exit if any command fails
+set -e
+
 #install chef 13 client
 wget https://packages.chef.io/files/stable/chef/13.5.3/ubuntu/16.04/chef_13.5.3-1_amd64.deb
 dpkg -i chef_13.5.3-1_amd64.deb
