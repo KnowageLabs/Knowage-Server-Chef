@@ -1,5 +1,6 @@
 # Knowage-Server-Chef
-Chef deployment script for Knowage Server https://www.knowage-suite.com. This recipe will automatically download, install and start Docker and Docker Compose with a container for the Knowage Web application and a container with MySQL database for metadata.
+Chef deployment script for Knowage Server https://www.knowage-suite.com. 
+This recipe will automatically download, install and start Docker and Docker Compose with a container for the Knowage Web application and a container with MySQL database for metadata.
 
 ## Usage
 
