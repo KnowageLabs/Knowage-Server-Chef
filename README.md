@@ -32,3 +32,8 @@ To release a new version of the Chef recipe (starting from the new Docker image)
 - edit `bin/installation.sh` by updating the Chef cookbooks link with the newest version.
 - create a folder (e.g. `6.2.1` for the same Knowage release version)
 - copy/paste the folders `bin`, `cookbooks` and all (but not other versioning folder).
+
+## How to contribute
+
+Before start to contribute, please read and sign the [Contributor License Agreement](https://www.clahub.com/agreements/KnowageLabs/Knowage-Server-Chef).
+The contribution process is based on GitHub pull requests (https://help.github.com/articles/about-pull-requests/).
